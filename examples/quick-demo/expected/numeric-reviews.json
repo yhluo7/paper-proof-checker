@@ -1,0 +1,76 @@
+{
+  "reviews": [
+    {
+      "check_id": "number-check-00001",
+      "verdict": "not_a_result",
+      "candidate_number_id": null,
+      "reason": "（标准答案）非研究结果数值（软件版本）。",
+      "confidence": "high",
+      "needs_human_review": false
+    },
+    {
+      "check_id": "number-check-00002",
+      "verdict": "exact_match",
+      "candidate_number_id": "num-00009",
+      "reason": "（标准答案）完全匹配。",
+      "confidence": "high",
+      "needs_human_review": false
+    },
+    {
+      "check_id": "number-check-00003",
+      "verdict": "rounded_match",
+      "candidate_number_id": "num-00010",
+      "reason": "（标准答案）四舍五入兼容。",
+      "confidence": "high",
+      "needs_human_review": false
+    },
+    {
+      "check_id": "number-check-00004",
+      "verdict": "converted_match",
+      "candidate_number_id": "num-00012",
+      "reason": "（标准答案）百分比与小数换算。",
+      "confidence": "high",
+      "needs_human_review": false
+    },
+    {
+      "check_id": "number-check-00005",
+      "verdict": "threshold_compatible",
+      "candidate_number_id": "num-00011",
+      "reason": "（标准答案）P值阈值兼容。",
+      "confidence": "high",
+      "needs_human_review": false
+    },
+    {
+      "check_id": "number-check-00006",
+      "verdict": "conflict",
+      "candidate_number_id": "num-00015",
+      "reason": "（标准答案）数值冲突。",
+      "confidence": "high",
+      "needs_human_review": true
+    },
+    {
+      "check_id": "number-check-00007",
+      "verdict": "source_not_found",
+      "candidate_number_id": null,
+      "reason": "（标准答案）数值无来源。",
+      "confidence": "high",
+      "needs_human_review": true
+    },
+    {
+      "check_id": "number-check-00008",
+      "verdict": "exact_match",
+      "candidate_number_id": "num-00029",
+      "reason": "（标准答案）补充材料提供来源。",
+      "confidence": "high",
+      "needs_human_review": false
+    },
+    {
+      "check_id": "number-check-00009",
+      "verdict": "manual_figure_check",
+      "candidate_number_id": null,
+      "reason": "（标准答案）图片人工检查。",
+      "confidence": "high",
+      "needs_human_review": true
+    }
+  ]
+}

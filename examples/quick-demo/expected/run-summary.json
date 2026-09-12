@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "rules_version": 2,
+  "enabled_checks": [
+    "numbers",
+    "citations"
+  ],
+  "created_at": "2026-09-12T16:13:55+08:00",
+  "counts": {
+    "blocks": 48,
+    "references": 5,
+    "number_checks": 9,
+    "citation_checks": 5
+  },
+  "reference_match_status": {
+    "1": "matched",
+    "2": "matched",
+    "3": "matched",
+    "4": "matched",
+    "5": "missing_pdf"
+  },
+  "reference_match_method": {
+    "1": "manual_map",
+    "2": "manual_map",
+    "3": "manual_map",
+    "4": "manual_map",
+    "5": null
+  },
+  "elapsed_seconds_prepare_to_report": 0.35
+}

@@ -1,0 +1,85 @@
+{
+  "reviews": [
+    {
+      "batch_id": "citation-check-00001",
+      "claim_id": "citation-check-00001-a",
+      "source_quote": "Treatment reduced all-cause mortality at one year in the treated group",
+      "claim_text": "Treatment reduced all-cause mortality at one year in the treated group.",
+      "reference_id": 1,
+      "verdict": "direct_support",
+      "evidence": [
+        {
+          "paragraph_id": "p0001-b006",
+          "page": 1,
+          "section": "",
+          "quote": "The intervention reduced all-cause mortality at one year in the treated group."
+        }
+      ],
+      "reason": "（标准答案）引用直接支撑。",
+      "confidence": "high",
+      "needs_human_review": false
+    },
+    {
+      "batch_id": "citation-check-00002",
+      "claim_id": "citation-check-00002-a",
+      "source_quote": "The intervention improved survival in every prespecified subgroup",
+      "claim_text": "The intervention improved survival in every prespecified subgroup.",
+      "reference_id": 2,
+      "verdict": "partial_support",
+      "evidence": [
+        {
+          "paragraph_id": "p0001-b006",
+          "page": 1,
+          "section": "",
+          "quote": "In the subgroup of patients with diabetes, the intervention improved survival at one year."
+        }
+      ],
+      "reason": "（标准答案）引用部分支撑。",
+      "confidence": "high",
+      "needs_human_review": true
+    },
+    {
+      "batch_id": "citation-check-00003",
+      "claim_id": "citation-check-00003-a",
+      "source_quote": "The intervention reduced mortality compared with usual care",
+      "claim_text": "The intervention reduced mortality compared with usual care.",
+      "reference_id": 3,
+      "verdict": "conflict",
+      "evidence": [
+        {
+          "paragraph_id": "p0001-b005",
+          "page": 1,
+          "section": "",
+          "quote": "The intervention did not reduce mortality compared with usual care at one year."
+        }
+      ],
+      "reason": "（标准答案）引用结论冲突。",
+      "confidence": "high",
+      "needs_human_review": true
+    },
+    {
+      "batch_id": "citation-check-00004",
+      "claim_id": "citation-check-00004-a",
+      "source_quote": "The intervention reduced hospital admissions at one year",
+      "claim_text": "The intervention reduced hospital admissions at one year.",
+      "reference_id": 4,
+      "verdict": "evidence_not_found",
+      "evidence": [],
+      "reason": "（标准答案）已有全文但未找到证据。",
+      "confidence": "high",
+      "needs_human_review": true
+    },
+    {
+      "batch_id": "citation-check-00005",
+      "claim_id": "citation-check-00005-a",
+      "source_quote": "The intervention reduced mortality in patients with severe disease",
+      "claim_text": "The intervention reduced mortality in patients with severe disease.",
+      "reference_id": 5,
+      "verdict": "full_text_unavailable",
+      "evidence": [],
+      "reason": "（标准答案）参考文献全文缺失。",
+      "confidence": "high",
+      "needs_human_review": true
+    }
+  ]
+}

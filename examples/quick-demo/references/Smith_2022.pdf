@@ -1,0 +1,90 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+/Title (Effects of the intervention on one\055year mortality)
+/Author (Smith J)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Page
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+/MediaBox [ 0.0 0.0 595 842 ]
+/Parent 2 0 R
+/Contents 6 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+>>
+endobj
+6 0 obj
+<<
+/Length 555
+>>
+stream
+BT
+/F1 11 Tf
+15 TL
+1 0 0 1 72 770 Tm
+(Effects of the intervention on one-year mortality) Tj
+1 0 0 1 72 725 Tm
+(doi:10.1234/demo.1) Tj
+1 0 0 1 72 680 Tm
+(Methods) Tj
+1 0 0 1 72 635 Tm
+(We randomly assigned adults admitted with severe disease to the intervention or to usual) Tj
+1 0 0 1 72 620 Tm
+(care.) Tj
+1 0 0 1 72 575 Tm
+(Results) Tj
+1 0 0 1 72 530 Tm
+(The intervention reduced all-cause mortality at one year in the treated group.) Tj
+1 0 0 1 72 485 Tm
+(Conclusion) Tj
+1 0 0 1 72 440 Tm
+(One-year survival is improved in the treated population.) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000134 00000 n 
+0000000193 00000 n 
+0000000242 00000 n 
+0000000374 00000 n 
+0000000471 00000 n 
+trailer
+<<
+/Size 7
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+1077
+%%EOF

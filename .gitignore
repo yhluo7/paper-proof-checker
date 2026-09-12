@@ -1,0 +1,33 @@
+# 虚拟环境
+.venv/
+.venv-*/
+
+# Python构建与缓存产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+*.whl
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 本地运行目录与实验临时目录（不进入公开仓库）
+paper-proof-output/
+real-runs/
+eval/runs/
+eval/tmp/
+codex-runs/
+
+# 验证器在运行目录内写出的错误清单；若误在仓库根运行validate会落到根目录
+validation-errors.json
+
+# 编辑器与操作系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+repo-docs/
+pyproject.toml

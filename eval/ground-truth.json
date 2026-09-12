@@ -1,0 +1,170 @@
+{
+  "benchmark": "paper-proof-checker examples/quick-demo",
+  "rules_version": 2,
+  "kinds": [
+    "number",
+    "citation"
+  ],
+  "scenario_total": 14,
+  "high_risk_total": 7,
+  "checks": [
+    {
+      "kind": "number",
+      "scenario": "非研究结果数值（软件版本）",
+      "check_id": "number-check-00001",
+      "expected_verdict": "not_a_result",
+      "expected_candidate_number_id": null,
+      "high_risk": false
+    },
+    {
+      "kind": "number",
+      "scenario": "完全匹配",
+      "check_id": "number-check-00002",
+      "expected_verdict": "exact_match",
+      "expected_candidate_number_id": "num-00009",
+      "high_risk": false
+    },
+    {
+      "kind": "number",
+      "scenario": "四舍五入兼容",
+      "check_id": "number-check-00003",
+      "expected_verdict": "rounded_match",
+      "expected_candidate_number_id": "num-00010",
+      "high_risk": false
+    },
+    {
+      "kind": "number",
+      "scenario": "百分比与小数换算",
+      "check_id": "number-check-00004",
+      "expected_verdict": "converted_match",
+      "expected_candidate_number_id": "num-00012",
+      "high_risk": false
+    },
+    {
+      "kind": "number",
+      "scenario": "P值阈值兼容",
+      "check_id": "number-check-00005",
+      "expected_verdict": "threshold_compatible",
+      "expected_candidate_number_id": "num-00011",
+      "high_risk": false
+    },
+    {
+      "kind": "number",
+      "scenario": "数值冲突",
+      "check_id": "number-check-00006",
+      "expected_verdict": "conflict",
+      "expected_candidate_number_id": "num-00015",
+      "high_risk": true
+    },
+    {
+      "kind": "number",
+      "scenario": "数值无来源",
+      "check_id": "number-check-00007",
+      "expected_verdict": "source_not_found",
+      "expected_candidate_number_id": null,
+      "high_risk": true
+    },
+    {
+      "kind": "number",
+      "scenario": "补充材料提供来源",
+      "check_id": "number-check-00008",
+      "expected_verdict": "exact_match",
+      "expected_candidate_number_id": "num-00029",
+      "high_risk": false
+    },
+    {
+      "kind": "number",
+      "scenario": "图片人工检查",
+      "check_id": "number-check-00009",
+      "expected_verdict": "manual_figure_check",
+      "expected_candidate_number_id": null,
+      "high_risk": true
+    },
+    {
+      "kind": "citation",
+      "scenario": "引用直接支撑",
+      "batch_id": "citation-check-00001",
+      "reference_id": 1,
+      "expected_verdict": "direct_support",
+      "expected_candidate_number_id": null,
+      "expected_evidence": {
+        "paragraph_id": "p0001-b006",
+        "page": 1,
+        "quote": "The intervention reduced all-cause mortality at one year in the treated group."
+      },
+      "high_risk": false
+    },
+    {
+      "kind": "citation",
+      "scenario": "引用部分支撑",
+      "batch_id": "citation-check-00002",
+      "reference_id": 2,
+      "expected_verdict": "partial_support",
+      "expected_candidate_number_id": null,
+      "expected_evidence": {
+        "paragraph_id": "p0001-b006",
+        "page": 1,
+        "quote": "In the subgroup of patients with diabetes, the intervention improved survival at one year."
+      },
+      "high_risk": true
+    },
+    {
+      "kind": "citation",
+      "scenario": "引用结论冲突",
+      "batch_id": "citation-check-00003",
+      "reference_id": 3,
+      "expected_verdict": "conflict",
+      "expected_candidate_number_id": null,
+      "expected_evidence": {
+        "paragraph_id": "p0001-b005",
+        "page": 1,
+        "quote": "The intervention did not reduce mortality compared with usual care at one year."
+      },
+      "high_risk": true
+    },
+    {
+      "kind": "citation",
+      "scenario": "已有全文但未找到证据",
+      "batch_id": "citation-check-00004",
+      "reference_id": 4,
+      "expected_verdict": "evidence_not_found",
+      "expected_candidate_number_id": null,
+      "expected_evidence": null,
+      "high_risk": true
+    },
+    {
+      "kind": "citation",
+      "scenario": "参考文献全文缺失",
+      "batch_id": "citation-check-00005",
+      "reference_id": 5,
+      "expected_verdict": "full_text_unavailable",
+      "expected_candidate_number_id": null,
+      "expected_evidence": null,
+      "high_risk": true
+    }
+  ],
+  "mapping_checks": [
+    {
+      "scenario": "PDF映射及页码回溯",
+      "reference_id": 3,
+      "expected_match_status": "matched",
+      "expected_match_method": "manual_map",
+      "note": "Brown_2021.pdf不写DOI且元数据标题不同，只能由reference-map.json建立唯一对应。"
+    },
+    {
+      "scenario": "PDF映射及页码回溯",
+      "reference_id": 1,
+      "expected_match_status": "matched",
+      "expected_match_method": "manual_map",
+      "note": "手工映射优先于自动匹配。"
+    },
+    {
+      "scenario": "PDF映射及页码回溯",
+      "reference_id": 5,
+      "expected_match_status": "missing_pdf",
+      "expected_match_method": null,
+      "note": "故意缺失的参考文献，必须被如实标记为缺少全文。"
+    }
+  ],
+  "frozen_note": "由Demo结构与预埋设计决定；在任何模型运行之前生成，之后不得修改。"
+}

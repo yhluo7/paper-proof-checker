@@ -1,0 +1,5 @@
+interface:
+  display_name: "Paper Proof Checker"
+  short_description: "Trace paper numbers and citation evidence"
+  default_prompt: "Use $paper-proof-checker to audit this manuscript's numbers and citation evidence."
+
